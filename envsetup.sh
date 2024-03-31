@@ -6,7 +6,7 @@ then
 else
     python3 -m venv env
 fi
-
+cd /var/lib/jenkins/workspace/Pipeline-tools
 source env/bin/activate
 
 
