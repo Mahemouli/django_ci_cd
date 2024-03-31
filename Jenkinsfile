@@ -10,6 +10,15 @@ pipeline{
             ./envsetup.sh
             '''}
         }
+        stage('sonar'){
+            steps {
+                sonar-scanner \
+  -Dsonar.projectKey=django \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=sqp_826b1474e9035b73cab949e0154e7879c4b7b04d
+            }
+        }
         stage('Setup Gunicorn Setup'){
             steps {
                 sh '''
