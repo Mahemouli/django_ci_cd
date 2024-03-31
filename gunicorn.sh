@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source env/bin/activate
+source .env/bin/activate
 
 cd /var/lib/jenkins/workspace/Pipeline-tools/app
 
@@ -10,7 +10,7 @@ sudo python3 manage.py collectstatic -- no-input
 
 echo "Migrations done"
 
-cd /var/lib/jenkins/workspace/Pipeline-tools
+cd /var/lib/jenkins/workspace/Pipeline-tools/scripts
 
 sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
