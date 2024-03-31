@@ -4,9 +4,8 @@ if [ -d "env" ]
 then
     echo "Python virtual environment exists." 
 else
-    python3 -m venv env
+  sudo python3 -m venv env
 fi
-cd /var/lib/jenkins/workspace/Pipeline-tools
 source .env/bin/activate
 
 
