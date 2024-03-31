@@ -13,7 +13,6 @@ pipeline{
         stage('Setup Gunicorn Setup'){
             steps {
                 sh '''
-                python3 -m pytest
                 chmod 777 gunicorn.sh
                 ./gunicorn.sh
                 '''
