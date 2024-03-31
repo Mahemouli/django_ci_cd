@@ -7,7 +7,7 @@ else
     python3 -m venv env
 fi
 cd /var/lib/jenkins/workspace/Pipeline-tools
-source env/bin/activate
+source .env/bin/activate
 
 
 pip3 install -r requirements.txt
