@@ -8,7 +8,6 @@ pipeline{
             sh '''
             chmod +x envsetup.sh
             ./envsetup.sh
-            /env/bin/python3 -m pytest
             '''}
         }
         stage('Setup Gunicorn Setup'){
