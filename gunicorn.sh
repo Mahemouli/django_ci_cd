@@ -4,9 +4,9 @@ source env/bin/activate
 
 cd /var/lib/jenkins/workspace/Pipeline-tools/app
 
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py collectstatic -- no-input
+sudo python3 manage.py makemigrations
+sudo python3 manage.py migrate
+sudo python3 manage.py collectstatic -- no-input
 
 echo "Migrations done"
 
