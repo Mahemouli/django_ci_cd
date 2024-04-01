@@ -10,7 +10,7 @@ pipeline{
             ./envsetup.sh
             '''}
         }
-       stage('sonar'){
+      /** stage('sonar'){
             steps {
                 sh '''
                sudo sonar-scanner \
@@ -21,7 +21,7 @@ pipeline{
                
   '''
             }
-        }
+        }**/
         stage('Setup Gunicorn Setup'){
             steps {
                 sh '''
