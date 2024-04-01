@@ -10,7 +10,7 @@ pipeline{
             ./envsetup.sh
             '''}
         }
-      /**  stage('sonar'){
+       stage('sonar'){
             steps {
                 sh '''
                 sonar-scanner \
@@ -20,7 +20,7 @@ pipeline{
   -Dsonar.token=sqp_826b1474e9035b73cab949e0154e7879c4b7b04d
   '''
             }
-        }**/
+        }
         stage('Setup Gunicorn Setup'){
             steps {
                 sh '''
