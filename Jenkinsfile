@@ -14,10 +14,10 @@ pipeline{
             steps {
                 sh '''
                sudo sonar-scanner \
-  -Dsonar.projectKey=django_cicd1 \
-  -Dsonar.sources=/var/lib/jenkins/workspace/Pipeline-tools/app \
-  -Dsonar.host.url=http://13.201.52.35:9000 \
-  -Dsonar.login=sqp_5bab19c8145c130169361c0bae5f825cd2e49676
+  -Dsonar.projectKey=django_cicd \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://3.108.223.31:9000 \
+  -Dsonar.login=squ_1cbd1169ac6cc5e3eb027ec5dce238cf182c75dc
                
   '''
             }
