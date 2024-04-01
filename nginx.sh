@@ -7,7 +7,7 @@ sudo ln -s /etc/nginx/sites-available/dev/app /etc/nginx/sites-enabled/dev/app
 sudo nginx -t
 
 sudo systemctl start nginx
-sudo systemctl restart nginx
+#sudo systemctl restart nginx
 sudo systemctl enable nginx
 
 echo "Nginx has been started"
