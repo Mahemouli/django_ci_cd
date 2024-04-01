@@ -13,12 +13,13 @@ pipeline{
       stage('sonar'){
             steps {
                 sh '''
-                sonar-scanner --version
-              /** sudo sonar-scanner \
+                sudo sonar-scanner --version
+                cd /var/lib/jenkins/workspace/Pipeline-tools/app
+              sudo sonar-scanner \
   -Dsonar.projectKey=django_cicd \
   -Dsonar.sources=. \
   -Dsonar.host.url=http://3.108.223.31:9000 \
-  -Dsonar.login=squ_1cbd1169ac6cc5e3eb027ec5dce238cf182c75dc **/
+  -Dsonar.login=squ_1cbd1169ac6cc5e3eb027ec5dce238cf182c75dc
                
   '''
             }
