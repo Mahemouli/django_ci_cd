@@ -14,7 +14,7 @@ pipeline{
             steps {
                 sh '''
                 sudo sonar-scanner --version
-                cd /var/lib/jenkins/workspace/Pipeline-tools/
+                cd /var/lib/jenkins/workspace/Pipeline-tools
              sudo sonar-scanner \
   -Dsonar.projectKey=django_cicd \
   -Dsonar.sources=. \
