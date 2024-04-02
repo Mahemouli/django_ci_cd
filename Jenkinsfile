@@ -18,6 +18,7 @@ pipeline{
              sudo sonar-scanner \
   -Dsonar.projectKey=django_cicd \
   -Dsonar.sources=. \
+  -Dsonar.verbose=true \
   -Dsonar.host.url=http://3.108.223.31:9000 \
   -Dsonar.login=squ_1cbd1169ac6cc5e3eb027ec5dce238cf182c75dc
  pwd              
